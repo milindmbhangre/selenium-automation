@@ -7,6 +7,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.source>1.8</java.source>
+		<java.target>1.8</java.target>
 	</properties>
 	<build>
 		<plugins>
@@ -16,7 +17,7 @@
 				<version>3.8.1</version>
 				<configuration>
 					<source>${java.source}</source>
-					<target>1.8</target>
+					<target>${java.target}</target>
 				</configuration>
 			</plugin>
 			<plugin>
