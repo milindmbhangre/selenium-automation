@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 public class CheckboxesTest {
 	
 	WebDriver driver;
+	String url = "https://www.seleniumeasy.com/test/basic-checkbox-demo.html";
 	
 	@BeforeClass
 	public void setup(){
@@ -26,7 +27,7 @@ public class CheckboxesTest {
 	
 	@Test
 	public void testCheckboxesReverseOrder() throws InterruptedException{
-		driver.get("https://www.seleniumeasy.com/test/basic-checkbox-demo.html");
+		driver.get(url);
 		System.out.println("Application launched");
 		List<WebElement> checkboxes = driver.findElements(By.cssSelector(".checkbox .cb1-element"));
 		System.out.println("Locator searched");
